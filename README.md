@@ -15,7 +15,7 @@ This project demonstrates routing, state management, dynamic filtering, form val
 
 ✅ **Browse Books Page**
 - Browse all books or filter by category
-- Dynamic routing (`/books/:category`)
+- Dynamic routing (`/books/:category`) 
 - Search books by title or author
 - Link to detailed book pages
 

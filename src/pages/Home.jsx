@@ -6,6 +6,7 @@ export default function Home() {
   // List of book categories to display as links
   const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "Fantasy"];
   return (
+    <>
     <div className="max-w-3xl mx-auto py-12 px-4">
       {/* Main heading for the home page */}
       <h1 className="text-4xl font-bold text-center mb-8 text-blue-700">
@@ -40,5 +41,16 @@ export default function Home() {
         </p>
       </div>
     </div>
+    <footer className="fixed right-10 bottom-10 text-gray-500 text-sm z-50">
+      <a
+        href="https://github.com/pankajvitaldeveloper/online-library.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-blue-600"
+      >
+        View on GitHub
+      </a>
+    </footer>
+    </>
   );
 }
