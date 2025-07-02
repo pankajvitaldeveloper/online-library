@@ -12,7 +12,7 @@ export default function Navbar() {
           LibrarySys
         </Link>
 
-        {/* Hamburger Toggle (Mobile) */}
+        {/* Hamburger Toggle (Mobile, Phone) */}
         <button
           className="sm:hidden text-white focus:outline-none"
           onClick={() => setOpen(!open)}
