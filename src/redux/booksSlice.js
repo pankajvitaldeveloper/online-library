@@ -1,7 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// This slice manages the state for the books in the online library.
+// It includes an initial list of books and a reducer to add new books.
+
 const initialState = {
   books: [
+    // Predefined list of books with details for demonstration and initial display
     {
       id: 1,
       title: "Dune",
@@ -85,16 +89,18 @@ const initialState = {
   ]
 };
 
-
 const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
+    // Adds a new book to the state with a unique id based on the current timestamp
     addBook: (state, action) => {
       state.books.push({ id: Date.now(), ...action.payload });
     }
   }
 });
 
+// Export the addBook action for use in components
 export const { addBook } = booksSlice.actions;
+// Export the reducer to be included in the Redux store
 export default booksSlice.reducer;
